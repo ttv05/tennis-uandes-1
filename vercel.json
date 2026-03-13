@@ -1,7 +1,6 @@
 {
   "buildCommand": "pnpm build:web",
   "outputDirectory": ".web",
-  "framework": "expo",
   "installCommand": "pnpm install",
   "env": {
     "EXPO_USE_METRO_WORKSPACE_ROOT": "1",
@@ -15,17 +14,6 @@
     {
       "source": "/(.*)",
       "destination": "/index.html"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=3600, must-revalidate"
-        }
-      ]
     }
   ]
 }
